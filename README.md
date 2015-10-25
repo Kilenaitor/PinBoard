@@ -29,6 +29,10 @@ Install the necessary gems
 
 `bundle install`
 
+Setup the database
+
+`rake db:migrate`
+
 You can start up the rails server with
 
 `rails s`
