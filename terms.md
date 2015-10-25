@@ -4,8 +4,8 @@ This list will be live updating but this is a pretty good start. A broad list of
 Current revision: Oct. 25, 2015
 
 ## Abbreviations
-\*RoR - Ruby on Rails
-PHP - PHP: Hypertext Preprocessor
+\*RoR - Ruby on Rails <br/>
+PHP - PHP: Hypertext Preprocessor <br />
 LAMP - Linux Apache MySQL PHP
 \*LARP - Linux Apache RoR PostgreSQL
 MEAN - MongoDB Express AngularJS node.js
