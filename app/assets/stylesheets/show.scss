@@ -1,0 +1,67 @@
+#pin {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#img_container {
+    text-align: center;
+}
+
+.pin-image {
+    max-width: 500px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html {
+    padding-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glyphicon-heart {
+    color: #CD1B1F;
+}
+
+.fab {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #CD1B1F;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    overflow:hidden;
+    text-align: center;
+    color: #FFF;
+    drop-shadow: ;
+}
+
+.new-pin a{
+    font-size: 22px;
+    color: #FFF !important;
+    text-decoration: none !important;
+    display: inline-block;
+    top: 50%;
+    margin-top: 10px;
+}

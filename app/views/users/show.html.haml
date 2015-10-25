@@ -1,0 +1,44 @@
+.user-info
+    %strong
+        = @user.username
+    %br
+    = @user.first_name
+    = @user.last_name
+    
+%hr
+
+- if @user.pins.length == 0
+    %center
+        =@user.username
+        has not posted anything
+- else
+    %strong
+        =@user.username
+        's Pins
+        %br
+        %br
+    #pins
+        - @user.pins.each do |pin|
+            %article.white-panel
+                = link_to pin do 
+                    .panel-heading.image-heading    
+                        = image_tag pin.image.url, :class => "pin_image"
+                    .panel-body
+                        .title
+                            = pin.title
+                        .description
+                            = pin.description
+                        
+
+    = javascript_include_tag 'pinterest_grid', 'data-turbolinks-track' => true
+
+    :javascript
+        $('#pins').imagesLoaded(function() {
+            $('#pins').pinterest_grid({
+                no_columns: 6,
+                padding_x: 10,
+                padding_y: 10,
+                margin_bottom: 50,
+                single_column_breakpoint: 768
+            });
+        });
