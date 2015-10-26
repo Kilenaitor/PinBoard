@@ -33,11 +33,9 @@ PinBoard was created for an educational workshop teaching Ruby on Rails for the 
 
 ## Terms
 
-No code from Pinterest was used in the creation of this application.
-
+No code from Pinterest was used in the creation of this application. <br>
 Any similarities are 100% coincidence.
 
-This project was created for educational instruction and may not be used commercially.
-
-If you have any questions, please email [Kyle Minshall](mailto:kyleminshall@gmail.com).
+This project was created for educational instruction and is not being used commercially.<br>
+If you have any questions, please email [Kyle Minshall](mailto:kyleminshall@gmail.com).<br>
 
