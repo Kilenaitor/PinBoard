@@ -3,45 +3,35 @@
 ##Intallation
 Need to have Ruby 2 installed and Rails 4.
 
-OS X:
+OS X:<br>
+`brew install ruby rubygems`<br>
+`gem install rails`<br>
 
-`brew install ruby rubygems`
+Windows:<br>
+http://rubyinstaller.org<br>
 
-`gem install rails`
+Linux:<br>
+`sudo apt-get install ruby rubygems`<br>
+`gem install rails`<br>
 
-Windows:
+Once RoR is installed, clone the respository.<br>
+`git clone git@github.com:Kilenaitor/PinBoard.git`<br>
+`cd PinBoard`<br>
 
-http://rubyinstaller.org
-
-Linux:
-
-`sudo apt-get install ruby rubygems`
-
-`gem install rails`
-
-Once RoR is installed, clone the respository.
-
-`git clone git@github.com:Kilenaitor/PinBoard.git`
-
-`cd PinBoard`
-
-Install the necessary gems
-
-`bundle install`
+Install the necessary gems<br>
+`bundle install`<br>
 
 Setup the database
-
-`rake db:migrate`
+`rake db:migrate`<br>
 
 You can start up the rails server with
-
-`rails s`
+`rails s`<br>
 
 ## Purpose
 
 PinBoard was created for an educational workshop teaching Ruby on Rails for the Web Development Career Pathway by ACM@UCR.
 
-## Pinterest
+## Terms
 
 No code from Pinterest was used in the creation of this application.
 
