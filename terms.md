@@ -1,7 +1,7 @@
 #Terms
 This list will be live updating but this is a pretty good start. A broad list of terms you may come across during web development.<br />
 
-Current revision: Oct. 25, 2015<br />
+Current revision: Oct. 26, 2015<br />
 
 ## Abbreviations
 **RoR** - Ruby on Rails <br/>
@@ -29,15 +29,17 @@ Current revision: Oct. 25, 2015<br />
 **API** - Application Program Interface<br />
 **AWS** - Amazon Web Services<br />
 **D.O.** - Digital Ocean<br />
+**REST** - REpresentational State Transfer <br />
+**SOAP** - Simple Object Access Protocol <br />
 
 ## Terms and Definitions
 **Backend** - The logic and behavior of the website.<br />
 **Frontend** - The UI; stylings, formatting, and user interactions<br />
 **MVC**<br />
-  **Model** - Handles fundamental behaviours and data of specific parts of the applications<br />
-  **View** - The User Interface of the application. Rendered Data from the Model<br />
-  **Controller** - Receives user input and makes calls to model objects and the view to perform appropriate actions<br />
-  MVC is the most popular web framework paradigm. It's a way to organize the logic and flow of the application from execution to render.<br />
+* **Model** - Handles fundamental behaviours and data of specific parts of the applications<br />
+* **View** - The User Interface of the application. Rendered Data from the Model<br />
+* **Controller** - Receives user input and makes calls to model objects and the view to perform appropriate actions<br />
+* MVC is the most popular web framework paradigm. It's a way to organize the logic and flow of the application from execution to render.<br />
 **Rails** - Ruby's MVC Framework<br />
 **PHP** - One of the oldest web languages. Began as a templating language for HTML and grew into the OOP/Procedural language that it is today.<br />
 **(Technology) Stack** - The list of technologies, programs, applications, and/or plugins that are used in a product.<br />
@@ -60,7 +62,7 @@ Current revision: Oct. 25, 2015<br />
 **JSON** - JSON is BASICALLY just a hash that is used to store data in an easy way. It's primarily used for passing data around the web from APIs.<br />
 **AJAX** - AJAX is awesome. AJAX allows you to make server requests from JavaScript, receive data back from the response, and then process the data. So, lets say you wanted to implement infinite scrolling to your webpage, but you don't want to have to load EVERYTHING all at once - that would take forever. So instead, you load the first 50 items, and when the user makes it 80% down the page, you send an AJAX request to your webserver to get the next 50 items, process the data, and append them to the bottom of your current list. It saves bandwidth, adds interactivity to your webpage, and doesn't require a page refresh to do. AJAX rocks.<br />
 **DB** - The database is how data is persistently stored on the web. There are two main types of databases - SQL/Relational Database, and NoSQL/Document Databases. SQL/Relational databases are visually similar to excel spreadsheets, with each table being a page in the document. Columns represent fields to be filled in, rows are entries into the table. Relations are how each table is connected to another table. For example, you have a users table and a comments table. Whenever someone makes a comment on something, the comment is added into the comments table with a user\_id field to tie it back to the specific user that made the comment. If you need to get the values from two+ tables, you can perform a JOIN on the data to link up specific columns from separate tables and link them together into a single result. Non-relational databases employ key-value pair arrays to store all of the data. Each user is stored in a (normally JSON) array with all of the fields being the key and the entries being the values. Think nested hash tables. NoSQL is extremely fast because of the lookup time of key-value arrays but aren't as useful at establishing relationships between entries in the database. Instead of having separate tables and a relation between the data, NoSQL would modify the user object to contain elements of the would-be relation. So for our users and comments, NoSQL would instead have a key-value array of the comments added to the post object that is being commented on in the first place.<br />
-**SQL** - Pronounced ES-QUEUE-ELL or sequel (totally up to you on pronunciation). Syntax for performing actions on a database. A query is a 'sentence' that tells a database what to do. Insert, Update, Delete, SELECT, etc. Reads pretty closely to English and is the main way of getting data back from a database. Say you wanted all comments on a certain post: `SELECT * FROM comments WHERE post\_id = 2;`.<br />
+**SQL** - Pronounced ES-QUEUE-ELL or sequel (totally up to you on pronunciation). Syntax for performing actions on a database. A query is a 'sentence' that tells a database what to do. Insert, Update, Delete, SELECT, etc. Reads pretty closely to English and is the main way of getting data back from a database. Say you wanted all comments on a certain post: `SELECT * FROM comments WHERE post_id = 2;`.<br />
 **ORM** - ORMs are pretty cool. Rather than deal with reading/writing queries and handling the data they return, ORMs will handle the querying and instead populate an object with the results of the query. Normally a query from a DB will return an key-value array with all of the content you asked for and it's up to you to parse the fields to extract the data. ORMs will take this one step further and pre-populate a model with the results of a query so you can directly work with and manipulate an object rather than the query/data. Rails' ORM is ActiveRecord, Symfony's (PHP Framework) is Doctrine, Python uses SQLAlchemy, Node uses orm (yes that's its name), and ASP.NET uses Entity.<br />
 **API** - API is a set of methods and functions that are able to be called to perform an action. API refers to both the functions themselves as well as their documentation. So if I said check the ActiveRecord API for searching, you would see a list of all of the functions ActiveRecord has for performing a search as well as how to properly use them and the data they return.<br />
 **Documentation** - Instructions and Specifications on code. Whether it be how to use an API, what data types are supported, what version the code is, what functionality is supported, etc., documentation is absolutely necessary for software. Good documentation can lead to your code actually being enjoyable to use. Bad documentation will land you in infamy or worse, abandonment.<br />
@@ -74,4 +76,19 @@ Current revision: Oct. 25, 2015<br />
 **Hash** - a one-way algorithm that performs certain mathematical functions to obfuscate the data into a (hopefully) unique result. Popular hashing algorithms include MD5 (don't use), SHA, Whirlpool, and Blowfish.<br />
 **Salting** - Adding a random string of characters to the end of a string pre-hashing to get unique outputs even when individual inputs may be the same.<br />
 **BCrypt** - Software used for storing passwords in a database. Employs hashing and salting to make sure the data is properly obfuscated and cannot be decrypted. Not 100% secure, but good enough for most cases. If security is a priority, employ a 'Log in with Google' or 'Log in with Facebook' button.<br />
+**Cookie** - A file, stored by a web browser, that persists longer than a user session. Normally used to store some website data so that it doesn't have to re-query the server for data. Common things stored in cookies are login/session tokens, shopping cart items, or interface preferences.<br />
+**GitHub** - A public git server where people can store code repositories, have teams, collaborate on code, or share open source work. Unlimited collaborators, but no free private repos. <br />
+**BitBucket** - A public git server where people can store code repositories, have teams, collaborate on code, or share open source work. Unlimited free private repos, but free team size limit is 5. <br />
+**HTTP Error Codes**
+* 200 - OK
+* 400 - Bad Request
+* 401 - Unauthorized
+* 403 - Forbidden
+* 404 - Not Found
+* 500 - Internal Server Error
+* 503 - Server Unavailable (Server is overloaded)
+**Asynchronous** - Methods are executed independent of their ordering within the file. They just run whenever they're called and will run along with other methods simultaneously.
+**Race Condition** - A condition where a device attempts to perform two or more operations at the same time but, because of how the system works, the operations must be done in the proper sequence to be done correctly. Normally refers to the error where one process is finishing before another one, which is causing undesirable behavior.
+**Promise** - (I'll be referring to them in the context of JavaScript) Promises are used to help you get out of callback hell. A promise is a method that eventually produces a value. It's the asynchronous equivalent of a getter access function. They replace the async use of callbacks. Promises can be in 1 of 3 states, *fulfilled*, *pending*, or *rejected*. Promises are set to pending when they are created and will eventually end up in either the fulfilled or rejected state. This state transition is called the *resolution*. You initialize a promise on some condition (e.g. an image is loaded) and then, using the `then` function, can execute events based on the result of the promise: `then(onFulfilled, onRejected)`. Very important if you want to execute methods after certain results are returned in an async environment where race conditions are definitely a thing. Promises are important. If you don't understand what they are, look them up! <br />
+
 
