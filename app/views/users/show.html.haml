@@ -1,6 +1,10 @@
+= content_for :title do
+    Overview for 
+    = @user.username.titlecase
+
 .user-info
     %strong
-        = @user.username
+        = "@#{@user.username}"
     %br
     = @user.first_name
     = @user.last_name
@@ -13,8 +17,7 @@
         has not posted anything
 - else
     %strong
-        =@user.username
-        's Pins
+        = "#{@user.username.titlecase}'s Pins"
         %br
         %br
     #pins

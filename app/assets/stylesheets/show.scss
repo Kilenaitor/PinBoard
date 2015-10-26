@@ -44,6 +44,7 @@ html {
 }
 
 .fab {
+    cursor: pointer;
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -54,7 +55,12 @@ html {
     overflow:hidden;
     text-align: center;
     color: #FFF;
-    drop-shadow: ;
+    box-shadow: 2px 2px 5px #777;
+}
+
+.fab:hover {
+    background-color: #A51619;
+    box-shadow: 1px 1px 5px #777;
 }
 
 .new-pin a{
