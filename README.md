@@ -21,10 +21,10 @@ Once RoR is installed, clone the respository.<br>
 Install the necessary gems<br>
 `bundle install`<br>
 
-Setup the database
+Setup the database<br>
 `rake db:migrate`<br>
 
-You can start up the rails server with
+You can start up the rails server with<br>
 `rails s`<br>
 
 ## Purpose
