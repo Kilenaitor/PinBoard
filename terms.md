@@ -35,11 +35,13 @@ Current revision: Oct. 26, 2015<br />
 ## Terms and Definitions
 **Backend** - The logic and behavior of the website.<br />
 **Frontend** - The UI; stylings, formatting, and user interactions<br />
+
 **MVC**<br />
 * **Model** - Handles fundamental behaviours and data of specific parts of the applications<br />
 * **View** - The User Interface of the application. Rendered Data from the Model<br />
 * **Controller** - Receives user input and makes calls to model objects and the view to perform appropriate actions<br />
 * MVC is the most popular web framework paradigm. It's a way to organize the logic and flow of the application from execution to render.<br />
+
 **Rails** - Ruby's MVC Framework<br />
 **PHP** - One of the oldest web languages. Began as a templating language for HTML and grew into the OOP/Procedural language that it is today.<br />
 **(Technology) Stack** - The list of technologies, programs, applications, and/or plugins that are used in a product.<br />
@@ -79,6 +81,7 @@ Current revision: Oct. 26, 2015<br />
 **Cookie** - A file, stored by a web browser, that persists longer than a user session. Normally used to store some website data so that it doesn't have to re-query the server for data. Common things stored in cookies are login/session tokens, shopping cart items, or interface preferences.<br />
 **GitHub** - A public git server where people can store code repositories, have teams, collaborate on code, or share open source work. Unlimited collaborators, but no free private repos. <br />
 **BitBucket** - A public git server where people can store code repositories, have teams, collaborate on code, or share open source work. Unlimited free private repos, but free team size limit is 5. <br />
+
 **HTTP Error Codes**
 * 200 - OK
 * 400 - Bad Request
@@ -87,6 +90,7 @@ Current revision: Oct. 26, 2015<br />
 * 404 - Not Found
 * 500 - Internal Server Error
 * 503 - Server Unavailable (Server is overloaded)
+
 **Asynchronous** - Methods are executed independent of their ordering within the file. They just run whenever they're called and will run along with other methods simultaneously.
 **Race Condition** - A condition where a device attempts to perform two or more operations at the same time but, because of how the system works, the operations must be done in the proper sequence to be done correctly. Normally refers to the error where one process is finishing before another one, which is causing undesirable behavior.
 **Promise** - (I'll be referring to them in the context of JavaScript) Promises are used to help you get out of callback hell. A promise is a method that eventually produces a value. It's the asynchronous equivalent of a getter access function. They replace the async use of callbacks. Promises can be in 1 of 3 states, *fulfilled*, *pending*, or *rejected*. Promises are set to pending when they are created and will eventually end up in either the fulfilled or rejected state. This state transition is called the *resolution*. You initialize a promise on some condition (e.g. an image is loaded) and then, using the `then` function, can execute events based on the result of the promise: `then(onFulfilled, onRejected)`. Very important if you want to execute methods after certain results are returned in an async environment where race conditions are definitely a thing. Promises are important. If you don't understand what they are, look them up! <br />
