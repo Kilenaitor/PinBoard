@@ -3,7 +3,7 @@ This list will be live updating but this is a pretty good start. A broad list of
 
 Current revision: Oct. 26, 2015<br />
 
-## Abbreviations
+## Abbreviations/Acronym
 **RoR** - Ruby on Rails <br/>
 **PHP** - PHP: Hypertext Preprocessor <br />
 **LAMP** - Linux Apache MySQL PHP<br />
@@ -31,6 +31,11 @@ Current revision: Oct. 26, 2015<br />
 **D.O.** - Digital Ocean<br />
 **REST** - REpresentational State Transfer <br />
 **SOAP** - Simple Object Access Protocol <br />
+**FTP** - File Transfer Protocol <br />
+**SFTP** - Secure File Transfer Protocol <br />
+**SSH** - Secure Shell <br />
+**ENV** - Environment <br />
+**SCP** - Secure Copy <br />
 
 ## Terms and Definitions
 **Backend** - The logic and behavior of the website.<br />
@@ -94,5 +99,9 @@ Current revision: Oct. 26, 2015<br />
 **Asynchronous** - Methods are executed independent of their ordering within the file. They just run whenever they're called and will run along with other methods simultaneously.<br />
 **Race Condition** - A condition where a device attempts to perform two or more operations at the same time but, because of how the system works, the operations must be done in the proper sequence to be done correctly. Normally refers to the error where one process is finishing before another one, which is causing undesirable behavior. <br />
 **Promise** - (I'll be referring to them in the context of JavaScript) Promises are used to help you get out of callback hell. A promise is a method that eventually produces a value. It's the asynchronous equivalent of a getter access function. They replace the async use of callbacks. Promises can be in 1 of 3 states, *fulfilled*, *pending*, or *rejected*. Promises are set to pending when they are created and will eventually end up in either the fulfilled or rejected state. This state transition is called the *resolution*. You initialize a promise on some condition (e.g. an image is loaded) and then, using the `then` function, can execute events based on the result of the promise: `then(onFulfilled, onRejected)`. Very important if you want to execute methods after certain results are returned in an async environment where race conditions are definitely a thing. Promises are important. If you don't understand what they are, look them up! <br />
-
+**Deployment** - Pushing code live to the world <br />
+**Prod** - **Production** - Code that is used by clients <br />
+**Staging** - Pre-Production but after developing. Kind of like a beta. Will be released to production if no last minute errors are found. <br />
+**Testing** - Pre-Staging; verifying that code does what it is intended to do. <br />
+**Dev** - Code is being written <br />
 
