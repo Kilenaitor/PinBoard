@@ -49,7 +49,6 @@ gem 'autosize-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'pg'
 end
 
 group :development do
@@ -64,5 +63,9 @@ group :development do
   gem "binding_of_caller"
   # Prefifies and enhances the error console for rails
   gem "better_errors"
+end
+
+group :production do
+  gem 'pg'
 end
 
