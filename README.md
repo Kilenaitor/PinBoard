@@ -24,6 +24,14 @@ Install the necessary gems<br>
 Setup the database<br>
 `rake db:migrate`<br>
 
+Lastly, we need ImageMagick installed on your machine<br>
+If you're on a mac,<br>
+`brew install imagemagick`<br>
+Linux,<br>
+`apt-get install imagemagick`<br>
+`yum install imagemagick`<br>
+`*insert other package manager here* install iamgemagick`<br>
+
 You can start up the rails server with<br>
 `rails s`<br>
 
