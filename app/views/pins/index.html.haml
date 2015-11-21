@@ -18,7 +18,7 @@
                         .title
                             = pin.title
                         .description
-                            = pin.description
+                            = truncate(pin.description, :length => 36, :separator => ' ')
             
     .fab.new-pin
         = link_to glyph(:plus), new_pin_path, alt: "Create New Pin"
